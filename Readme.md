@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Михаил Сугако](https://up.htmlacademy.ru/adaptive/20/user/1422099).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Кушнир](https://htmlacademy.ru/profile/id485545).
 
 ---
 
