@@ -6,10 +6,10 @@
   <title>HTML Academy: Пинк</title>
 </head>
 
-<body class="page__body">
+<body class="page__body page-form">
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="" alt="Приложение «Пинк»">
+      <img src="" alt="Приложение «Пинк». Логотип">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -46,27 +46,143 @@
     <section class="headline">
       <h1 class="headline__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
-    <!-- форма отправки -->
+    <section class="newpost">
+      <p class="newpost__title section-heading">Поделитесь своей историей и получите шанс выиграть ценнный приз - 1000
+        миль на вашу бонусную карту!</p>
+      <form class="newpost__form" enctype="multipart/form-data" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="newpost__full-name full-name">
+          <legend class="full-name__title visually-hidden">Ваше полное имя с фамилией и отчеством</legend>
+          <ul class="full-name__list">
+            <li class="full-name__item">
+              <label class="full-name__label form-headline" for="author-surname">Фамилия:</label>
+              <input class="full-name__input" type="text" name="author-surname" id="author-surname" placeholder="Укажите фамилию *"
+                required>
+            </li>
+            <li class="full-name__item">
+              <label class="full-name__label form-headline" for="author-name">Имя:</label>
+              <input class="full-name__input" type="text" name="author-name" id="author-name" placeholder="Введите ваше имя *"
+                required>
+            </li>
+            <li class="full-name__item">
+              <label class="full-name__label form-headline" for="author-patronym">Отчество:</label>
+              <input class="full-name__input" type="text" name="author-patronym" id="author-patronym"
+                placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="newpost__achievments achievments">
+          <legend class="achievments__heading form-headline">Ваши безбашенные достижения в
+            путешествии</legend>
+          <ul class="achievments__list">
+            <li class="achievments__item checkbox">
+              <input class="achievments__input" type="checkbox" name="crazy-selfie" id="task-1" checked>
+              <label class="achievments__label" for="task-1">Сделал селфи с акулой</label>
+            </li>
+            <li class="achievments__item checkbox">
+              <input class="achievments__input" type="checkbox" name="crazy-tan" id="task-2" checked>
+              <label class="achievments__label" for="task-2">Обгорел на пляже</label>
+            </li>
+            <li class="achievments__item checkbox">
+              <input class="achievments__input" type="checkbox" name="unreal-meeting" id="task-3">
+              <label class="achievments__label" for="task-3">Видел Чака Норриса</label>
+            </li>
+            <li class="achievments__item checkbox">
+              <input class="achievments__input" type="checkbox" name="souvenirs" id="task-4">
+              <label class="achievments__label" for="task-4">Накупил сувениров</label>
+            </li>
+            <li class="achievments__item checkbox">
+              <input class="achievments__input" type="checkbox" name="unexpected-photo" id="task-5" checked>
+              <label class="achievments__label" for="task-5">Удержал башню</label>
+            </li>
+            <li class="achievments__item checkbox">
+              <input class="achievments__input" type="checkbox" name="barbarian-style" id="task-6">
+              <label class="achievments__label" for="task-6">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="newpost__author-contact author-contact">
+          <legend class="author-contact__title visually-hidden">Ваши контактные данные</legend>
+          <ul class="author-contact__list">
+            <li class="author-contact__item">
+              <input class="author-contact__input" type="tel" name="author-phone" id="call-author"
+                placeholder="Номер, пожалуйста">
+              <label class="author-contact__label form-headline" for="call-author">Номер телефона</label>
+            </li>
+            <li class="author-contact__item">
+              <input class="author-contact__input" type="email" name="author-email" id="write-author"
+                placeholder="Введите почту *" required>
+              <label class="author-contact__label form-headline" for="write-author">Адрес почты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="newpost__userapp userapp">
+          <legend class="userapp__title form-headline">С каким приложением путешествовали?</legend>
+          <ul class="userapp__list">
+            <li class="userapp__item">
+              <input class="userapp__input" type="radio" name="used-platform" id="app-mac" value="apple" checked>
+              <label class="userapp__label" for="app-mac">Pink для iOS</label>
+            </li>
+            <li class="userapp__item">
+              <input class="userapp__input" type="radio" name="used-platform" id="app-android" value="android">
+              <label class="userapp__label" for="app-android">Pink на Android</label>
+            </li>
+            <li class="userapp__item">
+              <input class="userapp__input" type="radio" name="used-platform" id="app-windows" value="windows">
+              <label class="userapp__label" for="app-windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="newpost__comment comment">
+          <legend class="comment__title form-headline">Опишите свои эмоции</legend>
+          <textarea class="comment__emotions" name="author-emotions" id="author-emotions" cols="30"
+            rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <button class="newpost__button" type="submit">Отправить форму</button>
+      </form>
+      <p class="newpost__remark">* - обязательные поля</p>
+    </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo" href="index.html"></a>
+    <a class="page-footer__logo" href="index.html">
+      <img src="" alt="Приложение «Пинк». Логотип">
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#" target="_blank"><span>Читайте наш твиттер</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#" target="_blank"><span>Следите за нами в Фейсбук</span></a>
+          <a class="social__link social__link--facebook" href="#" target="_blank"><span>Следите за нами в
+              Фейсбук</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#" target="_blank"><span>Смотрите нас на YouTube</span></a>
+          <a class="social__link social__link--youtube" href="#" target="_blank"><span>Смотрите нас на
+              YouTube</span></a>
         </li>
       </ul>
     </div>
     <p class="page-footer__copyright">Разработано</p>
     <a class="page-footer__academy-logo" href="#" target="_blank"><span class="">Логотип Академии</span></a>
   </footer>
+
+  <section class="page-form__popup popup">
+    <div class="popup__success success">
+      <h1 class="success__heading">Ваша заявка отправлена</h1>
+      <p class="success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим
+        ее и оповестим вас.</p>
+    </div>
+    <button type="button" class="popup__button">Закрыть окно</button>
+  </section>
+
+  <section class="page-form__popup popup">
+    <div class="popup__failure failure">
+      <h1 class="failure__heading">Что-то пошло не так!</h1>
+      <p class="failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    </div>
+    <button type="button" class="popup__button">Ок</button>
+  </section>
+
 </body>
 
 </html>
