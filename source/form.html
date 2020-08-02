@@ -55,18 +55,18 @@
           <ul class="full-name__list">
             <li class="full-name__item">
               <label class="full-name__label form-headline" for="author-surname">Фамилия:</label>
-              <input class="full-name__input" type="text" name="surname" id="author-surname" value="Укажите фамилию *"
+              <input class="full-name__input" type="text" name="author-surname" id="author-surname" placeholder="Укажите фамилию *"
                 required>
             </li>
             <li class="full-name__item">
               <label class="full-name__label form-headline" for="author-name">Имя:</label>
-              <input class="full-name__input" type="text" name="name" id="author-name" value="Введите ваше имя *"
+              <input class="full-name__input" type="text" name="author-name" id="author-name" placeholder="Введите ваше имя *"
                 required>
             </li>
             <li class="full-name__item">
               <label class="full-name__label form-headline" for="author-patronym">Отчество:</label>
-              <input class="full-name__input" type="text" name="patronym" id="author-patronym"
-                value="Ну и отчество тоже">
+              <input class="full-name__input" type="text" name="author-patronym" id="author-patronym"
+                placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
@@ -75,27 +75,27 @@
             путешествии</legend>
           <ul class="achievments__list">
             <li class="achievments__item checkbox">
-              <input class="achievments__input" type="checkbox" name="activity" id="task-1" checked>
+              <input class="achievments__input" type="checkbox" name="crazy-selfie" id="task-1" checked>
               <label class="achievments__label" for="task-1">Сделал селфи с акулой</label>
             </li>
             <li class="achievments__item checkbox">
-              <input class="achievments__input" type="checkbox" name="activity" id="task-2" checked>
+              <input class="achievments__input" type="checkbox" name="crazy-tan" id="task-2" checked>
               <label class="achievments__label" for="task-2">Обгорел на пляже</label>
             </li>
             <li class="achievments__item checkbox">
-              <input class="achievments__input" type="checkbox" name="activity" id="task-3">
+              <input class="achievments__input" type="checkbox" name="unreal-meeting" id="task-3">
               <label class="achievments__label" for="task-3">Видел Чака Норриса</label>
             </li>
             <li class="achievments__item checkbox">
-              <input class="achievments__input" type="checkbox" name="activity" id="task-4">
+              <input class="achievments__input" type="checkbox" name="souvenirs" id="task-4">
               <label class="achievments__label" for="task-4">Накупил сувениров</label>
             </li>
             <li class="achievments__item checkbox">
-              <input class="achievments__input" type="checkbox" name="activity" id="task-5" checked>
+              <input class="achievments__input" type="checkbox" name="unexpected-photo" id="task-5" checked>
               <label class="achievments__label" for="task-5">Удержал башню</label>
             </li>
             <li class="achievments__item checkbox">
-              <input class="achievments__input" type="checkbox" name="activity" id="task-6">
+              <input class="achievments__input" type="checkbox" name="barbarian-style" id="task-6">
               <label class="achievments__label" for="task-6">Разгромил отель</label>
             </li>
           </ul>
@@ -104,7 +104,7 @@
           <legend class="author-contact__title visually-hidden">Ваши контактные данные</legend>
           <ul class="author-contact__list">
             <li class="author-contact__item">
-              <input class="author-contact__input" type="tel" name="author-tel" id="call-author"
+              <input class="author-contact__input" type="tel" name="author-phone" id="call-author"
                 placeholder="Номер, пожалуйста">
               <label class="author-contact__label form-headline" for="call-author">Номер телефона</label>
             </li>
@@ -119,25 +119,25 @@
           <legend class="userapp__title form-headline">С каким приложением путешествовали?</legend>
           <ul class="userapp__list">
             <li class="userapp__item">
-              <input class="userapp__input" type="radio" name="travel-app" id="app-mac" checked>
+              <input class="userapp__input" type="radio" name="used-platform" id="app-mac" value="apple" checked>
               <label class="userapp__label" for="app-mac">Pink для iOS</label>
             </li>
             <li class="userapp__item">
-              <input class="userapp__input" type="radio" name="travel-app" id="app-android">
+              <input class="userapp__input" type="radio" name="used-platform" id="app-android" value="android">
               <label class="userapp__label" for="app-android">Pink на Android</label>
             </li>
             <li class="userapp__item">
-              <input class="userapp__input" type="radio" name="travel-app" id="app-windows">
+              <input class="userapp__input" type="radio" name="used-platform" id="app-windows" value="windows">
               <label class="userapp__label" for="app-windows">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="newpost__comment comment">
           <legend class="comment__title form-headline">Опишите свои эмоции</legend>
-          <textarea class="comment__emotions" name="emotions" id="author-emotions" cols="30"
-            rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          <textarea class="comment__emotions" name="author-emotions" id="author-emotions" cols="30"
+            rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <input class="newpost__button" type="submit" value="Отправить форму">
+        <button class="newpost__button" type="submit">Отправить форму</button>
       </form>
       <p class="newpost__remark">* - обязательные поля</p>
     </section>
@@ -168,11 +168,11 @@
 
   <section class="page-form__popup popup">
     <div class="popup__success success">
-      <h1 class="success__heading">Ваша заявка отправлено</h1>
+      <h1 class="success__heading">Ваша заявка отправлена</h1>
       <p class="success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим
         ее и оповестим вас.</p>
     </div>
-    <button class="popup__button">Закрыть окно</button>
+    <button type="button" class="popup__button">Закрыть окно</button>
   </section>
 
   <section class="page-form__popup popup">
@@ -180,7 +180,7 @@
       <h1 class="failure__heading">Что-то пошло не так!</h1>
       <p class="failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
-    <button class="popup__button">Ок</button>
+    <button type="button" class="popup__button">Ок</button>
   </section>
 
 </body>
