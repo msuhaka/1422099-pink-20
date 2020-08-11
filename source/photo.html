@@ -4,48 +4,53 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="" alt="Приложение «Пинк». Логотип">
-    </a>
+    <div class="page-header__top">
+      <a class="page-header__link">
+        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Приложение «Пинк». Логотип">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+        <ul class="main-nav__list site-list list-reset">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
               HTML Academy
             </a>
           </li>
         </ul>
       </div>
     </nav>
-  </header>
-
-  <main class="page-main">
     <section class="headline">
       <h1 class="headline__title">Фотографии пользователей</h1>
     </section>
+  </header>
+
+  <main class="page-main">
+
     <section class="userpost">
       <p class="userpost__title section-heading">Взгляните на фотографии, которые выкладывают пользователи! Видите, как
         не хватает
