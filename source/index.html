@@ -17,7 +17,10 @@
     </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="">Открыть меню</span>
+      </button>
+      <button class="main-nav__toggle" type="button">
+        <span class="">Закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list list-reset">
@@ -44,38 +47,47 @@
         </ul>
       </div>
     </nav>
-    <section class="headline">
-      <h1 class="headline__title visually-hidden">Приложение «Пинк»</h1>
-      <h2 class="headline__slogan">Взгляни на жизнь иначе</h2>
-    </section>
-    <section class="download">
-      <a class="download__button" href="https://www.apple.com/ru/ios/app-store/" target="_blank">Скачать приложение</a>
-      <ul class="download__list list-reset">
-        <li class="download__item">
-          <a class="download__link download__link--mac" href="https://www.apple.com/ru/ios/app-store/"
-            target="_blank"><span class="visually-hidden">AppStore</span></a>
-        </li>
-        <li class="download__item">
-          <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru"
-            target="_blank"><span class="visually-hidden">GooglePlay</span></a>
-        </li>
-        <li class="download__item">
-          <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"
-            target="_blank"><span class="visually-hidden">MicrosoftStore</span></a>
-        </li>
-      </ul>
-      <p class="download__OS-suitability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
   </header>
-
-  <main class="page-main">
+  
+  <main class="page-main home-page">
+    <section class="headline download">
+      <h1 class="headline__title visually-hidden">Приложение «Пинк»</h1>
+      <h2 class="headline__slogan">Взгляни на жизнь иначе!</h2>
+      <div class="download__wrapper">
+        <a class="download__button" href="https://www.apple.com/ru/ios/app-store/" target="_blank">Скачать приложение</a>
+        <ul class="download__list list-reset">
+          <li class="download__item">
+            <a class="download__link download__link--mac" href="https://www.apple.com/ru/ios/app-store/"
+              target="_blank"><span class="visually-hidden">AppStore</span></a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru"
+              target="_blank"><span class="visually-hidden">GooglePlay</span></a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"
+              target="_blank"><span class="visually-hidden">MicrosoftStore</span></a>
+          </li>
+        </ul>
+        <p class="download__OS-suitability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
     <section class="benefits">
-      <h2 class="visually-hidden">Практические задачи приложения «Пинк»</h2>
+      <h2 class="visually-hidden">Задачи приложения «Пинк»</h2>
       <h2 class="benefits__slogan page__headline">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
-      <ul class="benefits__list">
-        <li class="benefits__item">Поднимает настроение</li>
-        <li class="benefits__item">Меняет мир вокруг</li>
-        <li class="benefits__item">Заводит новых друзей</li>
+      <ul class="benefits__list list-reset">
+        <li class="benefits__item">
+          <h3 class="benefits__title">Поднимает настроение</h3>
+          <p class="benefits__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="benefits__item">
+          <h3 class="benefits__title">Меняет мир вокруг</h3>
+          <p class="benefits__text">Сделайте снимок и украсьте его смайликм или текстовым, чтобы усилить эффект</p>
+        </li>
+        <li class="benefits__item">
+          <h3 class="benefits__title">Заводит новых друзей</h3>
+          <p class="benefits__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
       </ul>
     </section>
     <section class="review">
@@ -170,7 +182,7 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="index.html">
-      <img src="" alt="Приложение «Пинк». Логотип">
+      <img src="img/logo-pink-blue-mobile.svg" alt="Приложение «Пинк». Логотип">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
