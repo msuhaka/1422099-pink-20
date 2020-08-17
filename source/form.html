@@ -5,10 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="page__body page-form">
+<body class="body">
   <header class="page-header">
     <div class="page-header__top">
       <a class="page-header__link">
@@ -20,8 +19,8 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list list-reset">
-          <li class="main-nav__item main-nav__item--active">
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">
               Главная
             </a>
@@ -31,7 +30,7 @@
               Фотографии
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link" href="form.html">
               Конкурс
             </a>
@@ -51,7 +50,7 @@
       <h1 class="headline__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
     <section class="newpost">
-      <p class="newpost__title section-heading">Поделитесь своей историей и получите шанс выиграть ценнный приз - 1000
+      <p class="newpost__title">Поделитесь своей историей и получите шанс выиграть ценнный приз - 1000
         миль на вашу бонусную карту!</p>
       <form class="newpost__form" enctype="multipart/form-data" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="newpost__full-name full-name">

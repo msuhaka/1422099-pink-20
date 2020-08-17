@@ -5,10 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="page__body">
+<body class="body">
   <header class="page-header">
     <div class="page-header__top">
       <a class="page-header__link">
@@ -20,13 +19,13 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list list-reset">
-          <li class="main-nav__item main-nav__item--active">
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link" href="photo.html">
               Фотографии
             </a>
@@ -51,7 +50,7 @@
       <h1 class="headline__title">Фотографии пользователей</h1>
     </section>
     <section class="userpost">
-      <p class="userpost__title section-heading">Взгляните на фотографии, которые выкладывают пользователи! Видите, как
+      <p class="userpost__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как
         не хватает
         ваших?</p>
       <ul class="userpost__list">
@@ -138,7 +137,7 @@
       </ul>
     </section>
     <section class="upload">
-      <p class="upload__title section-heading">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <form class="upload__form" enctype="multipart/form-data" method="post" action="https://echo.htmlacademy.ru">
         <label class="upload__label" for="upload-photo">Выбрать фотографию</label>
         <input class="upload__input visually-hidden" type="file" name="image" accept="image/*" id="upload-photo">
