@@ -4,36 +4,39 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body page-form">
+<body class="body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="" alt="Приложение «Пинк». Логотип">
-    </a>
+    <div class="page-header__top">
+      <a class="page-header__link">
+        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Приложение «Пинк». Логотип">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="form.html">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
               HTML Academy
             </a>
           </li>
@@ -47,7 +50,7 @@
       <h1 class="headline__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
     <section class="newpost">
-      <p class="newpost__title section-heading">Поделитесь своей историей и получите шанс выиграть ценнный приз - 1000
+      <p class="newpost__title">Поделитесь своей историей и получите шанс выиграть ценнный приз - 1000
         миль на вашу бонусную карту!</p>
       <form class="newpost__form" enctype="multipart/form-data" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="newpost__full-name full-name">
@@ -55,13 +58,13 @@
           <ul class="full-name__list">
             <li class="full-name__item">
               <label class="full-name__label form-headline" for="author-surname">Фамилия:</label>
-              <input class="full-name__input" type="text" name="author-surname" id="author-surname" placeholder="Укажите фамилию *"
-                required>
+              <input class="full-name__input" type="text" name="author-surname" id="author-surname"
+                placeholder="Укажите фамилию *" required>
             </li>
             <li class="full-name__item">
               <label class="full-name__label form-headline" for="author-name">Имя:</label>
-              <input class="full-name__input" type="text" name="author-name" id="author-name" placeholder="Введите ваше имя *"
-                required>
+              <input class="full-name__input" type="text" name="author-name" id="author-name"
+                placeholder="Введите ваше имя *" required>
             </li>
             <li class="full-name__item">
               <label class="full-name__label form-headline" for="author-patronym">Отчество:</label>
@@ -134,8 +137,8 @@
         </fieldset>
         <fieldset class="newpost__comment comment">
           <legend class="comment__title form-headline">Опишите свои эмоции</legend>
-          <textarea class="comment__emotions" name="author-emotions" id="author-emotions" cols="30"
-            rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="comment__emotions" name="author-emotions" id="author-emotions" cols="30" rows="10"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="newpost__button" type="submit">Отправить форму</button>
       </form>
@@ -145,7 +148,7 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="index.html">
-      <img src="" alt="Приложение «Пинк». Логотип">
+      <img src="img/logo-pink-blue-mobile.svg" alt="Приложение «Пинк». Логотип">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">

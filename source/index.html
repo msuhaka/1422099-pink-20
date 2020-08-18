@@ -4,36 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="" alt="Приложение «Пинк». Логотип">
-    </a>
+    <div class="page-header__top">
+      <a class="page-header__link">
+        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" alt="Приложение «Пинк». Логотип">
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="">Открыть меню</span>
+      </button>
+      <button class="main-nav__toggle" type="button">
+        <span class="">Закрыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">
               Фотографии
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
               Конкурс
             </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
               HTML Academy
             </a>
           </li>
@@ -41,37 +47,46 @@
       </div>
     </nav>
   </header>
-
-  <main class="page-main">
-    <section class="headline">
+  
+  <main class="page-main home-page">
+    <section class="headline download">
       <h1 class="headline__title visually-hidden">Приложение «Пинк»</h1>
-    </section>
-    <section class="download">
-      <h2 class="download__slogan">Взгляни на жизнь иначе</h2>
-      <a class="download__button" href="https://www.apple.com/ru/ios/app-store/" target="_blank"></a>
-      <ul class="download__list">
-        <li class="download__item">
-          <a class="download__link download__link--mac" href="https://www.apple.com/ru/ios/app-store/"
-            target="_blank"><span class="visually-hidden">AppStore</span></a>
-        </li>
-        <li class="download__item">
-          <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru"
-            target="_blank"><span class="visually-hidden">GooglePlay</span></a>
-        </li>
-        <li class="download__item">
-          <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"
-            target="_blank"><span class="visually-hidden">MicrosoftStore</span></a>
-        </li>
-      </ul>
-      <p class="download__OS-suitability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <h2 class="headline__slogan">Взгляни на жизнь иначе!</h2>
+      <div class="download__wrapper">
+        <a class="download__button" href="https://www.apple.com/ru/ios/app-store/" target="_blank">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__link download__link--mac" href="https://www.apple.com/ru/ios/app-store/"
+              target="_blank"><span class="visually-hidden">AppStore</span></a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru"
+              target="_blank"><span class="visually-hidden">GooglePlay</span></a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows"
+              target="_blank"><span class="visually-hidden">MicrosoftStore</span></a>
+          </li>
+        </ul>
+        <p class="download__OS-suitability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
     <section class="benefits">
-      <h2 class="visually-hidden">Практические задачи приложения «Пинк»</h2>
-      <h2 class="benefits__slogan page__headline">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+      <h2 class="visually-hidden">Задачи приложения «Пинк»</h2>
+      <h2 class="benefits__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
       <ul class="benefits__list">
-        <li class="benefits__item">Поднимает настроение</li>
-        <li class="benefits__item">Меняет мир вокруг</li>
-        <li class="benefits__item">Заводит новых друзей</li>
+        <li class="benefits__item">
+          <h3 class="benefits__title">Поднимает настроение</h3>
+          <p class="benefits__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="benefits__item">
+          <h3 class="benefits__title">Меняет мир вокруг</h3>
+          <p class="benefits__text">Сделайте снимок и украсьте его смайликм или текстовым, чтобы усилить эффект</p>
+        </li>
+        <li class="benefits__item">
+          <h3 class="benefits__title">Заводит новых друзей</h3>
+          <p class="benefits__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
       </ul>
     </section>
     <section class="review">
@@ -142,7 +157,7 @@
     </section>
     <section class="contact">
       <h2 class="contact__title visually-hidden">Обратная связь с разработчиками</h2>
-      <h2 class="contact__subtitle page__headline">Остались вопросы? Свяжитесь с нами!</h2>
+      <h2 class="contact__subtitle">Остались вопросы? Свяжитесь с нами!</h2>
       <ul class="contact__list">
         <li class="contact__item">
           <h3 class="contact__caption">Звоните:</h3>
@@ -166,7 +181,7 @@
 
   <footer class="page-footer">
     <a class="page-footer__logo" href="index.html">
-      <img src="" alt="Приложение «Пинк». Логотип">
+      <img src="img/logo-pink-blue-mobile.svg" alt="Приложение «Пинк». Логотип">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
