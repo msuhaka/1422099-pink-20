@@ -12,9 +12,21 @@
 
 .benefits__list {
     .list-reset();
+    background-color: #f2f2f2;
+
+    &::after {
+        display: none;
+        content: "";
+        width: 157px;
+        height: 320px;
+        background-image: url("..img/iphone-screen-mobile@1x.png");
+        background-repeat: no-repeat;
+        position: absolute;
+    }
 }
 
 .benefits__slogan {
     .section-heading();
     margin: 0;
+    position: relative;
 }

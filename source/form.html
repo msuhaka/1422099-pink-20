@@ -53,28 +53,28 @@
       <p class="newpost__title">Поделитесь своей историей и получите шанс выиграть ценнный приз - 1000
         миль на вашу бонусную карту!</p>
       <form class="newpost__form" enctype="multipart/form-data" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="newpost__full-name full-name">
+        <fieldset class="newpost__fieldset full-name">
           <legend class="full-name__title visually-hidden">Ваше полное имя с фамилией и отчеством</legend>
           <ul class="full-name__list">
             <li class="full-name__item">
-              <label class="full-name__label form-headline" for="author-surname">Фамилия:</label>
-              <input class="full-name__input" type="text" name="author-surname" id="author-surname"
+              <label class="full-name__label" for="author-surname">Фамилия:</label>
+              <input class="full-name__input full-name__input--surname" type="text" name="author-surname" id="author-surname"
                 placeholder="Укажите фамилию *" required>
             </li>
             <li class="full-name__item">
-              <label class="full-name__label form-headline" for="author-name">Имя:</label>
-              <input class="full-name__input" type="text" name="author-name" id="author-name"
+              <label class="full-name__label" for="author-name">Имя:</label>
+              <input class="full-name__input full-name__input--name" type="text" name="author-name" id="author-name"
                 placeholder="Введите ваше имя *" required>
             </li>
             <li class="full-name__item">
-              <label class="full-name__label form-headline" for="author-patronym">Отчество:</label>
-              <input class="full-name__input" type="text" name="author-patronym" id="author-patronym"
+              <label class="full-name__label" for="author-patronym">Отчество:</label>
+              <input class="full-name__input full-name__input--patronym" type="text" name="author-patronym" id="author-patronym"
                 placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="newpost__achievments achievments">
-          <legend class="achievments__heading form-headline">Ваши безбашенные достижения в
+        <fieldset class="newpost__fieldset achievments">
+          <legend class="achievments__heading">Ваши безбашенные достижения в
             путешествии</legend>
           <ul class="achievments__list">
             <li class="achievments__item checkbox">
@@ -103,23 +103,23 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="newpost__author-contact author-contact">
+        <fieldset class="newpost__fieldset author-contact">
           <legend class="author-contact__title visually-hidden">Ваши контактные данные</legend>
           <ul class="author-contact__list">
             <li class="author-contact__item">
               <input class="author-contact__input" type="tel" name="author-phone" id="call-author"
                 placeholder="Номер, пожалуйста">
-              <label class="author-contact__label form-headline" for="call-author">Номер телефона</label>
+              <label class="author-contact__label" for="call-author">Номер телефона</label>
             </li>
             <li class="author-contact__item">
               <input class="author-contact__input" type="email" name="author-email" id="write-author"
                 placeholder="Введите почту *" required>
-              <label class="author-contact__label form-headline" for="write-author">Адрес почты</label>
+              <label class="author-contact__label" for="write-author">Адрес почты</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="newpost__userapp userapp">
-          <legend class="userapp__title form-headline">С каким приложением путешествовали?</legend>
+        <fieldset class="newpost__fieldset userapp">
+          <legend class="userapp__title">С каким приложением путешествовали?</legend>
           <ul class="userapp__list">
             <li class="userapp__item">
               <input class="userapp__input" type="radio" name="used-platform" id="app-mac" value="apple" checked>
@@ -135,9 +135,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="newpost__comment comment">
-          <legend class="comment__title form-headline">Опишите свои эмоции</legend>
-          <textarea class="comment__emotions" name="author-emotions" id="author-emotions" cols="30" rows="10"
+        <fieldset class="newpost__fieldset comment">
+          <legend class="comment__title">Опишите свои эмоции</legend>
+          <textarea class="comment__emotions" name="author-emotions" id="author-emotions" cols="27" rows="6"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="newpost__button" type="submit">Отправить форму</button>
@@ -171,8 +171,8 @@
 
   <section class="page-form__popup popup">
     <div class="popup__success success">
-      <h1 class="success__heading">Ваша заявка отправлена</h1>
-      <p class="success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим
+      <h1 class="popup__heading">Ваша заявка отправлена</h1>
+      <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим
         ее и оповестим вас.</p>
     </div>
     <button type="button" class="popup__button">Закрыть окно</button>
@@ -180,8 +180,8 @@
 
   <section class="page-form__popup popup">
     <div class="popup__failure failure">
-      <h1 class="failure__heading">Что-то пошло не так!</h1>
-      <p class="failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <h1 class="popup__heading">Что-то пошло не так!</h1>
+      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
     <button type="button" class="popup__button">Ок</button>
   </section>

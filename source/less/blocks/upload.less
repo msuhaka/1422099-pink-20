@@ -1,3 +1,46 @@
+.upload__form {
+    background-color: #f2f2f2;
+}
+
 .upload__title {
     .page-heading();
+}
+
+.upload__button {
+    &--submit {
+        &:hover {
+            color: #ffffff;
+            background-color: #d22856;
+        }
+
+        &:active {
+            color: #ffffff;
+            background-color: #d22856;
+            opacity: 0.3;
+        }
+
+        color: #d22856;
+        border: 3px solid #d22856;
+    }
+
+    &--reset {
+        &:hover {
+            opacity: 0.3;
+        }
+
+        &:active {
+            background: #283645;
+            color: #ffffff;
+            opacity: 0.3;
+        }
+
+        color: #283645;
+        opacity: 0.1;
+        border: 3px solid #283645;
+    }
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 30px;
 }
