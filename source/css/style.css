@@ -1,8 +1,7 @@
 /*-----------------------preSet---------------------*/
 body {
-  box-sizing: border-box;
   background-color: #ffffff;
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -15,7 +14,7 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 .visually-hidden {
   position: absolute;
@@ -56,9 +55,6 @@ img {
   font-display: swap;
 }
 /*----------------mixins-------------------*/
-.slider-toggle {
-  margin: 0;
-}
 /*-----------------Header-----------------*/
 .page-header__top {
   background-color: #283645;
@@ -315,7 +311,6 @@ img {
   line-height: 2.14;
 }
 .newpost__button {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
@@ -338,7 +333,6 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 .newpost__remark {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
@@ -358,32 +352,29 @@ img {
   border-radius: 1px;
 }
 .full-name__input::-moz-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
 }
 .full-name__input::placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
 }
-.achievments {
+.achievements {
   background-color: #f2f2f2;
 }
-.achievments__list {
+.achievements__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.achievments__heading {
+.achievements__heading {
   line-height: 1.29;
   color: #d22856;
   text-transform: uppercase;
 }
-.achievments__label {
-  font-family: "Open Sans", "Arial", sans-serif;
+.achievements__label {
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
@@ -399,13 +390,11 @@ img {
   text-transform: uppercase;
 }
 .author-contact__input::-moz-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
 }
 .author-contact__input::placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
@@ -416,7 +405,6 @@ img {
   text-transform: uppercase;
 }
 .comment__emotions {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
@@ -428,13 +416,11 @@ img {
   resize: none;
 }
 .comment__emotions::-moz-placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
 }
 .comment__emotions::placeholder {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
@@ -453,7 +439,6 @@ img {
   text-transform: uppercase;
 }
 .userapp__label {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
@@ -482,7 +467,6 @@ img {
   margin: 0;
 }
 .popup__button {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;

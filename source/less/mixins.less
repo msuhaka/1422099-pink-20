@@ -18,7 +18,7 @@
 }
 
 .form-text() {
-  font-family: "Open Sans", "Arial", sans-serif;
+  // font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 1.67;
   color: #283645;
@@ -31,6 +31,16 @@
 }
 
 .green-button() {
+
+  .form-text();
+
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+
   &:hover {
     background-color: #1c9b5e;
     border: 2px solid #1c9b5e;
@@ -41,14 +51,6 @@
     background-color: #1c9b5e;
     border: 2px solid #1c9b5e;
     border-radius: 1px;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(#ffffff, 0.3);
   }
-
-  .form-text();
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #2aab6d;
-  border: 2px solid #2aab6d;
-  border-radius: 1px;
 }
