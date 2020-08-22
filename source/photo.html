@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -44,7 +45,6 @@
       </div>
     </nav>
   </header>
-
   <main class="page-main">
     <section class="headline">
       <h1 class="headline__title">Фотографии пользователей</h1>
@@ -139,7 +139,7 @@
     <section class="upload">
       <p class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       <form class="upload__form" enctype="multipart/form-data" method="post" action="https://echo.htmlacademy.ru">
-        <label class="upload__label" for="upload-photo">Выбрать фотографию</label>
+        <label class="upload__label" for="upload-photo"></label>
         <input class="upload__input visually-hidden" type="file" name="image" accept="image/*" id="upload-photo">
         <div class="upload__image-editor"></div>
         <button class="upload__button upload__button--submit" type="submit">Запостить</button>
@@ -147,7 +147,6 @@
       </form>
     </section>
   </main>
-
   <footer class="page-footer">
     <a class="page-footer__logo" href="index.html">
       <img src="img/logo-pink-blue-mobile.svg" alt="Приложение «Пинк». Логотип">
@@ -171,5 +170,4 @@
     <a class="page-footer__academy-logo" href="#" target="_blank"><span class="">Логотип Академии</span></a>
   </footer>
 </body>
-
 </html>
