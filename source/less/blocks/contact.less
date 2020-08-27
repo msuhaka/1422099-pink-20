@@ -1,10 +1,17 @@
 .contact__list {
   .list-reset();
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .contact__subtitle {
   .section-heading();
-  margin: 0;
+  margin-top: 20px;
 }
 
 .contact__caption {
@@ -20,4 +27,12 @@
   font-size: 24px;
   line-height: 1.375;
   color: #d22856;
+}
+
+.contact__item {
+  margin-bottom: 20px;
+}
+
+.contact__map {
+  height: 200px;
 }

@@ -1,5 +1,14 @@
+.review__wrapper {
+  padding: 20px;
+}
+
 .review__list {
   .list-reset();
+}
+
+.review__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .review__content {
@@ -12,13 +21,23 @@
   line-height: 1.5;
   font-weight: bold;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
 }
 
 .review__author-about {
   line-height: 2.14;
   display: none;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 2;
+  }
 }
 
 .review__toggles {
-  margin: 0;
+  margin-top: 20px;
 }
