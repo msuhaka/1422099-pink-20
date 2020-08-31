@@ -27,11 +27,11 @@
   background-color: #283645;
   border-top: 1px solid #000000;
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     display: flex;
     background-color: transparent;
     border: none;
-  }
+  });
 }
 
 .main-nav__item {
@@ -41,16 +41,16 @@
   padding: 16px;
   text-align: center;
 
-  @media (min-width: @tablet-width) {
+  .tablet ({
     padding-top: 16px;
-  }
+  });
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     background-color: transparent;
     border: none;
     box-shadow: none;
     margin-left: 79px;
     padding: 44px 0;
     width: max-content;
-  }
+  });
 }

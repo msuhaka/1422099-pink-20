@@ -22,9 +22,9 @@
   font-weight: bold;
   margin: 0;
 
-  @media (min-width: @tablet-width) {
+  .tablet ({
     order: 1;
-  }
+  });
 }
 
 .review__author-about {
@@ -32,10 +32,10 @@
   display: none;
   margin: 0;
 
-  @media (min-width: @tablet-width) {
-    display: block;
+  .tablet ({
+        display: block;
     order: 2;
-  }
+  });
 }
 
 .review__toggles {

@@ -1,20 +1,25 @@
 .research {
-  padding: 0 50px;
+  padding: 20px 50px;
   display: none;
   text-align: start;
 
-  @media (min-width: @tablet-width) {
+  .tablet ({
     display: flex;
     justify-content: flex-end;
-  }
+  });
 
-  @media (min-width: @desktop-width) {
+  .desktop ({
     display: flex;
     justify-content: flex-end;
     background-color: #f2f2f2;
-  }
+  });
 }
 
 .research__wrapper {
   width: 50%;
+}
+
+.research__link {
+  color: #d22856;
+  text-decoration: underline;
 }
